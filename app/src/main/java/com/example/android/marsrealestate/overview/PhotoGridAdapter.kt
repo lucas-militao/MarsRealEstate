@@ -29,7 +29,7 @@ class PhotoGridAdapter: ListAdapter<MarsProperty, PhotoGridAdapter.MarsPropertyV
 
     companion object DiffCallback : DiffUtil.ItemCallback<MarsProperty>() {
         override fun areItemsTheSame(oldItem: MarsProperty, newItem: MarsProperty): Boolean {
-            return oldItem == newItem
+            return oldItem === newItem
         }
 
         override fun areContentsTheSame(oldItem: MarsProperty, newItem: MarsProperty): Boolean {
